@@ -49,7 +49,9 @@ class TopNav extends Component {
                             </Link>
 
                             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                                <span className="navbar-toggler-icon"></span>
+                                <span className="navbar-toggler-icon">
+                                    <i style={{fontSize:'30px'}} class="fas fa-bars"></i>
+                                </span>
                             </button>
 
                             <div className="collapse navbar-collapse" id="navbarCollapse">
