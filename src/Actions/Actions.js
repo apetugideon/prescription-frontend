@@ -134,3 +134,5 @@ export function dateFormat(inDate) {
 export function padStr(input, width, charc='') {
     return String(input).padStart(width, charc || '0');
 }
+
+//NOTE
