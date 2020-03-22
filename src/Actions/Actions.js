@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch';
 
-const base_url = 'http://localhost:8000/api';
+const base_url = 'https://drug-prescription-backend.herokuapp.com/api'; //'http://localhost:8000/api';
 
 export function checkUser(point="") {
     const retObj = {};
