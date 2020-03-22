@@ -1,38 +1,119 @@
+body {
+  background-color: #f8f8f8;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-wrapper {
+  width:100%; margin: 0px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.middle-pane-wrapper {
+  padding-right: 0;padding-left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-nav-wrapper {
+  float: right
 }
 
-.App-link {
-  color: #61dafb;
+.pop-over-menu {
+  color:#999999;
+  padding-top: 5px;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logout-text {
+  color: red;font-size: 1.25rem;padding-right: 0 !important;
+}
+
+.nav-style {padding: 10px 0 8px 0;box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);background-color: #ffffff !important;}
+.newDrops {
+    position: relative;
+    font-family: Arial;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+    font-size: 11px;
+}
+
+
+
+/******************************************************************************/
+.container-wrap { margin-top:80px }
+#work-area {
+  max-height:900px;border: 1px solid #eee; background-color: #fff;padding:5px 15px;margin-bottom: 50px;
+}
+#work-area2 {
+  max-height:900px;padding:5px 15px;margin-bottom: 50px;
+}
+.inner-wrapper {width: 100%; float: left; max-height: 100%;}
+.inner-wrapper2 {width: 100%; float: left; max-height: 100%; background-color: #fff;margin-bottom: 10px;border: 1px solid #eee;padding: 10px 15px;}
+.game-menu-wrapper {width: 100%; float: left; height: 35px;line-height: 15px;}
+.paddn1 {padding: 1px;}
+.pad-left-auto {margin-left: auto;}
+.pad-right1 {padding-right: 1px}
+#slice-display {
+  width: 100%; float:left; border: 1px dashed #999999; height: calc(100% - 70px);overflow: auto;z-index: 555555;
+}
+
+.footer-menu {width: 100%; float: left;text-align: right;padding: 3px 0;font-size: 12px;}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  list-style: none;
+}
+
+.top-menu {
+  font-size: 1.2rem;
+  padding: 7px 0 7px 25px !important;
+}
+
+.logout-text {
+  color: red;padding-right: 0 !important;
+}
+
+.table-wrap {
+  width: 100%; height: 200px; overflow: auto; margin-bottom: 10px;
+}
+
+.datedisp {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 11px;
+  margin: 4px 0 !important;
+  font-weight: bolder;
+}
+
+.dosespan {
+  width: auto;
+  float: left;
+  margin-right: 5px;
+  padding: 1px 5px;
+  margin-bottom: 5px;
+}
+
+.dose-title {
+  width: auto;
+  float: left;
+  margin-right: 5px;
+  padding: 1px 5px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.verify-btn {
+  width: 100%;
+  margin: 3px auto;
+  height: 20px;
+  font-size: 12px;
+  padding: 0 2px 18px 2px !important;
 }
