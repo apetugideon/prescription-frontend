@@ -17,15 +17,13 @@ class Login extends Component {
     createHandler = (event) => {
         event.preventDefault();
         postData(this.state, '/user/login').then((rdata) => {
-            console.log('rdata',rdata);
-            
             localStore(rdata.data.token, 'tokenUser', 'add');
             checkUser();
             setTimeout(() => {
-                console.log(localStore('','isAuthenticated','get'));
-                
                 this.props.history.push('/');
-            }, 1000);
+            }, 3000);
+        }).catch((error) => {
+            console.log(error);
         }); 
     }
 
