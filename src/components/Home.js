@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import  { Redirect, Link } from 'react-router-dom';
 import { getData, notEmptyArray, localStore, dateFormat, postData, padStr, putData } from '../Actions/Actions';
 import TopNav from './TopNav.js';
-import VerifyBtn from './VerifyBtn.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -95,13 +94,6 @@ class Home extends Component {
         }
     }
 
-    verifyBtn(status) {    
-        return (
-            <div>
-                {((status) && (status === "Y")) ? <div>Cancel</div> : <div>Verify</div>}
-            </div>
-        );
-    }
 
     render() { 
         const today = new Date();

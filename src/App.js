@@ -7,7 +7,6 @@ import Prescriptions from './components/Prescriptions.js';
 import Ailments from './components/Ailments.js';
 import Formulas from './components/Formulas.js';
 import Placements from './components/Placements.js';
-import Unauthorized from './components/Unauthorized.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { localStore } from './Actions/Actions';
 
@@ -30,7 +29,7 @@ function App() {
                 <Route path="/formulas" exact component={Formulas} />
                 <Route path="/placements" exact component={Placements} />
               </div>
-            : <Route path="/unauthorized" exact component={Unauthorized} />}
+            : ""}
           </Switch>
         </div>
       </Router>
